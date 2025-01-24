@@ -1,0 +1,135 @@
+.inline-boxes-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align boxes to the top */
+  width: calc(100% - 20px); /* Account for left and right margins */
+  position: absolute;
+  box-sizing: border-box;
+  left: 10px;
+  gap: 5px;
+  z-index: 1;
+  top: calc(25% + 300px + 15%); /* Positioned 20% below the carousel's bottom */
+  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+}
+
+.inline-box {
+  flex: 1;
+  margin: 10px;
+  padding: 40px;
+  max-width: 400px; /* Constrain maximum box width */
+  width: 100%; /* Allow the box to adjust with the container */
+  height: 440px; /* Let height adjust dynamically */
+  background-color: #faedcb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.inline-box.box-1, .inline-box.box-2 {
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+}
+
+.inline-box.box-2 {
+  align-items: flex-start; /* Align content to the left */
+}
+
+.inline-box h3 {
+  font-size: 1.0rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.inline-box p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* Styling for Box 1 with 2x2 grid */
+.inline-box.box-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline-box.box-1 h3 {
+  font-size: 1 rem;
+  color: black;
+  text-align: left;
+}
+
+.grid-container_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Space between items */
+  width: 100%; /* Ensure the grid takes full width */
+}
+
+
+.grid-items_1 {
+  display: block;
+  overflow: hidden;
+  width: 100%; /* Make items responsive */
+  aspect-ratio: 1 / 1; /* Maintain a square shape */
+}
+
+.grid-items_1 img {
+  width: 100%; /* Ensure images fill the grid item */
+  height: 100%; /* Ensure images maintain aspect ratio */
+  object-fit: cover; /* Crop images to fit the container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-items_1:hover img {
+  transform: scale(1.05);
+}
+.see-all-details1, .see-all-details2 {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 0.9rem;
+  align-self: flex-start; /* Align link to the left */
+}
+/* Box 2 Styling */
+.inline-box.box-2 h3 {
+  font-size: 1 rem;
+  color: black;
+  text-align: left;
+}
+
+.inline-box.box-3 h3 {
+  font-size: 1 rem;
+  color: black;
+  text-align: left;
+}
+.inline-box.box-4 h3 {
+  font-size: 1 rem;
+  color: black;
+  text-align: left;
+}
+.centered-image img {
+  max-width: 100%; /* Responsive width */
+  height:300px; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.centered-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* Box 2 Styling */
+.inline-box.box-2 .centered-image img {
+  max-width: 80%; /* Reduce the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.inline-box.box-2 .centered-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

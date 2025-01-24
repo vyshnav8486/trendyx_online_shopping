@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#faedcb;
+    position: fixed;  /* Fix the navbar at the top */
+    top:0;  /* Position it at the top */
+    left:0;
+    height:50px;
+    width: 100%;  /* Full width */
+    z-index: 1000;  /* Make sure it's on top of other content */
+}
+  .logo h1 {
+    top:0;
+    margin-left: 70px;
+    font-size: 44px;
+    font-weight: bold;
+    font-family:'Courgette', cursive;;
+    color:black;
+  }
+  .search-bar {
+    position:relative;
+    width: 30%; /* Adjust the width as necessary */
+    right: 10%;
+
+  }
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 1rem; /* Add space for the icon */
+    border: none;
+    outline: none; /* Remove the default focus outline */
+    border-radius: 5px;
+    background-color:#f1faee;
+    color: black;
+  }
+   .search-bar i {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%); /* Vertically center the icon */
+    color:black; /* Icon color */
+    font-size: 1rem;
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }
+  .nav-icons {
+    display: flex;
+    gap: 2.5rem;
+    margin-right:3rem;
+    text-decoration: none;
+    cursor:default;
+  }
+  .material-symbols-outlined {
+    font-size:25px; /* Adjust size */
+    color:black; /* Change color if needed */
+  }

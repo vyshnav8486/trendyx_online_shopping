@@ -1,0 +1,28 @@
+.carousel-container {
+    position: absolute; /* Keeps it fixed on the screen */
+    width: 50vw;
+    height: 400px;
+    left:20px;
+    top: 20%; /* Moves it down 200px from the top */
+    overflow: hidden;
+    background-color: #ddd;
+    z-index: 1;
+    margin: 0 auto;
+  }
+  
+  
+  
+  /* Carousel images settings */
+  .carousel-images {
+    display: flex; /* Align images in a row */
+    transition: transform 1s ease-in-out; /* Smooth sliding effect */
+    width: 100%; /* Full width of the container */
+  }
+  
+  /* Carousel image styling */
+  .carousel-image {
+    width: 50vw; /* Each image spans half the screen width */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+  }
+  
