@@ -8,7 +8,7 @@
   /* Heading styling */
   .heading2 {
     position: absolute;
-    top: calc(52rem - 2rem); /* Adjust relative to the box container */
+    top: calc(65rem - 2rem); /* Adjust relative to the box container */
     left: 20px;
     font-size: 24px;
     font-family: sans-serif;
@@ -23,9 +23,9 @@
     justify-content: space-between;
     background-color:#faedcb;
     align-items: center;
-    width: 115%; /* Account for 20px margins on both sides */
+    width: 99%; /* Account for 20px margins on both sides */
     position: relative;
-    top: 50rem; /* Distance from the top */
+    top: 63rem; /* Distance from the top */
     height: 300px; /* Fixed height for the container */
     padding: 10px;
     box-sizing: border-box;

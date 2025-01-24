@@ -1,0 +1,87 @@
+/* About Page Styles */
+.about-page {
+    background-color: #817373;
+    padding: 20px 0; /* Vertical padding only */
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* No external spacing */
+    top: 68rem;
+    height: 55vh;
+    box-sizing: border-box; /* Includes padding in element dimensions */
+  }
+  
+  .about-content {
+    display: flex; /* Display sections in a single line */
+    justify-content: space-between; /* Distribute sections evenly */
+    align-items: flex-start; /* Align sections to the top */
+    width: 100%; /* Take up full width */
+    max-width: 100%; /* Prevent content from being constrained */
+    margin: 0 auto; /* Center-align content horizontally */
+    text-align: justify;
+    color: #fff; /* White text for contrast */
+  }
+  
+  .about-content h1 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .about-content a {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Section Styling for the Lists */
+  .section {
+    flex: 1; /* Make each section take equal space */
+    margin: 0 10px; /* Add space between sections */
+  }
+  
+  .section h2 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section ul li {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center align the list items */
+    gap: 20px; /* Space between items */
+  }
+  
+  .footer ul a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    text-decoration: none;
+  }

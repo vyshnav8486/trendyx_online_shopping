@@ -6,6 +6,7 @@ import OfferGrid from "./components/OfferGrid.jsx";
 import BigSales from "./components/BigSales.jsx";
 import InlineBoxes from "./components/InlineBoxes";
 import SevenBoxes from "./components/SevenBoxes";
+import About from "./components/About";
 const App = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const App = () => {
       <BigSales/>
       <InlineBoxes/>
       <SevenBoxes/>
+      <About/>
     </div>
   );
 };
